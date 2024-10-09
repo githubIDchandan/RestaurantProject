@@ -1,0 +1,39 @@
+
+body{
+    margin: 0px;
+}
+.parentHeader{
+    background-color: brown;
+    width: 100%;
+    top: 0px;
+    /* left: 0; */
+    height: 100px;
+    /* margin: 0 auto; */
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cartname{
+    display: inline;
+    font-size: 25px;
+    color: white;
+}
+.cartParent{
+    margin-top: 30px;
+    background-color: red;
+    height: fit-content;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+}
+.headername{
+    color: white;
+ 
+}
+.cartbtn{
+    border-radius: 100px;
+    border: 1px solid white;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+}
