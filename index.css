@@ -37,3 +37,20 @@ body{
     color: white;
     font-size: 25px;
 }
+.res-summary-parent{
+    margin: auto;
+    margin-left: 320px;
+    margin-top: 100px;
+}
+.res-summary{
+    height: 250px;
+    width: 800px;
+    background-color: grey;
+    border-radius: 10px;
+    
+}
+.res-summary-heading{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
