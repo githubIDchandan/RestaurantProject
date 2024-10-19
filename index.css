@@ -103,3 +103,84 @@ body{
 .amounttag{
     margin-bottom: 0px;
 }
+
+
+/* .... */
+
+
+.modelparent{
+    position: fixed;
+    /* display: flex; */
+    width: 600px;
+    background-color: white;
+    /* justify-content: space-between; */
+    margin-left: 425px;
+    margin-top: 70px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    
+}
+.amount{
+    display: flex;
+    justify-content: space-between;
+}
+.orderBtn{
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+    
+}
+.cbtn{
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid brown;
+    border-radius: 10px;
+    font-size: larger;
+    cursor: pointer;
+}
+.cbtn:hover{
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+}
+.obtn:hover{
+    background-color: rgb(49, 239, 49);
+    border: 1px solid white;
+}
+.obtn{
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    background-color: brown;
+    color: white;
+    border: 1px solid brown;
+    border-radius: 10px;
+    font-size: large;
+    cursor: pointer;
+   
+}
+.amountvalue{
+    margin-right: 10px;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.amounttext{
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cuisinelist{
+    margin-left: 10px;
+}
+.modelWrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* background-color: rgb(218, 218, 218); */
+    background-color: black;
+    opacity: 0.6;
+}
