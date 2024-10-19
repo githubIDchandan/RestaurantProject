@@ -26,6 +26,7 @@ body{
     width: 200px;
     text-align: center;
     border-radius: 20px;
+    cursor: pointer;
 }
 .headername{
     color: white;

@@ -2,10 +2,14 @@ import { useEffect } from "react";
 import { createPortal } from "react-dom";
 
 
-const Model=()=>{
+const Model=({showM})=>{
     useEffect(()=>{
         document.body.style.overflowY="hidden";
         document.body.style.overflowX="hidden";
+        return ()=>{
+            document.body.style.overflowY="scroll";
+            document.body.style.overflowX="scroll"; 
+        }
     })
     return createPortal(
         <div>
@@ -17,7 +21,8 @@ const Model=()=>{
                 <h1 className="amountvalue">35.62</h1>
             </div>
             <div className="orderBtn">
-                <button className="cbtn">close</button>
+                <button className="cbtn" onClick={showM}
+                >close</button>
                 <button className="obtn">order</button>
             </div>
         </div>
