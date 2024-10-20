@@ -88,6 +88,8 @@ body{
     width: 40px;
     border: 1px solid gray;
     margin-top: 25px;
+    color: brown;
+    background-color: whitesmoke;
 
 }
 .addBtn{
@@ -99,6 +101,13 @@ body{
     padding: 10px;
     cursor: pointer;
     border-radius: 50px;
+
+}
+.addBtn:hover{
+    background-color:white;
+    color: rgb(99, 165, 0);
+    border: 1px solid white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
 }
 .amounttag{
@@ -148,7 +157,7 @@ body{
     border: 1px solid white;
 }
 .obtn:hover{
-    background-color: rgb(49, 239, 49);
+    background-color: rgb(39, 152, 39);
     border: 1px solid white;
 }
 .obtn{
@@ -170,10 +179,7 @@ body{
 }
 .amounttext{
     margin-left: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.cuisinelist{
-    margin-left: 10px;
+    font-family: sans-serif;
 }
 .modelWrapper{
     position: fixed;
@@ -184,4 +190,64 @@ body{
     /* background-color: rgb(218, 218, 218); */
     background-color: black;
     opacity: 0.6;
+}
+.cuisinelist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.cuisineamount{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-left: 15px;
+    margin-top: 0px;
+}
+.cuisineItrBtn{
+    height: 30px;
+    margin-top: 15px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.cartcounterBtn{
+    width: 100px;
+    /* background-color: yellow; */
+    margin: 30px;
+
+}
+.cartplusBtn{
+    width: 40px;
+    margin: 5px;
+    background-color: rgb(157, 157, 157);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.cartplusBtn:hover{
+    background-color: rgb(110, 110, 110);
+
+}
+.cartdltBtn{
+    width: 40px;
+    margin: 5px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cartdltBtn:hover{
+    background-color: rgb(211, 3, 3);
+
+}
+.cuisineItem{
+    margin-left: 15px;
+    margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
 }

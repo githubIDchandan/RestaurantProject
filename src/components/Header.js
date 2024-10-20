@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import Model from "./Model";
+import UserContext from "../utils.js/UserContext";
 
 
 const Header=()=>{
   const [showmodel,setShowModel]=useState(false)
-
+  const {Name}=   useContext(UserContext)
+  const [count,setCount]=useState(0);
     useEffect(()=>{
        return setShowModel(true)
     },[])
@@ -13,6 +15,7 @@ const Header=()=>{
         console.log("hii")
         return setShowModel(false);
     }
+
     return(
         <div className="parentHeader">
            {showmodel&&<Model showM={showM}/>}
@@ -24,7 +27,8 @@ const Header=()=>{
             setShowModel(true)
            }}>
               <h3 className="cartname">👜Your Cart</h3>
-              <button className="cartbtn">0</button>
+              <button className="cartbtn">{Name.length}</button>
+              {/* <h3>{Name}</h3> */}
            </div>
         </div>
     )
